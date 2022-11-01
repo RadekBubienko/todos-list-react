@@ -1,0 +1,21 @@
+.section__header {
+    border-bottom: 1px solid #ddd;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+  
+.header {
+    color: #3c3c3c;
+    padding: 15px 0;
+  
+}
+  
+.subHeader {
+    font-size: 20px;
+    color: #3c3c3c;
+    margin: 0;
+}

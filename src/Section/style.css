@@ -7,6 +7,17 @@
     align-items: center;
     padding: 20px;
 }
+
+@media (max-width: 767px) {
+    .section__header {
+        grid-template-columns: 1fr;
+    }
+
+    .buttons__button {
+        flex-basis: 100%;
+        margin: 10px;
+    }
+}
   
 .header {
     color: #3c3c3c;

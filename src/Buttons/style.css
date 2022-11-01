@@ -18,14 +18,3 @@
 .buttons__button:disabled {
     color: #ccc;
 }
-
-@media (max-width: 767px) {
-    .section__header {
-        grid-template-columns: 1fr;
-    }
-
-    .buttons__button {
-        flex-basis: 100%;
-        margin: 10px;
-    }
-}

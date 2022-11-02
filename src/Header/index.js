@@ -1,9 +1,7 @@
-
-
 const Header = ({ title }) => (
     <header>
         <h1 className="header">{title}</h1>
-      </header>
+    </header>
 );
 
 export default Header;

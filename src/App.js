@@ -23,12 +23,8 @@ function App() {
 
       <Section
         title="Lista Zadań"
-        body={
-        <Tasks tasks={tasks} hideDoneTasks={hideDoneTasks} />
-        }
-        extraHeaderContent={
-        <Buttons tasks={tasks} hideDoneTasks={hideDoneTasks} />
-        }
+        body={<Tasks tasks={tasks} hideDoneTasks={hideDoneTasks} />}
+        extraHeaderContent={<Buttons tasks={tasks} hideDoneTasks={hideDoneTasks} />}
       />
       
     </>

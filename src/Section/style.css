@@ -12,11 +12,6 @@
     .section__header {
         grid-template-columns: 1fr;
     }
-
-    .buttons__button {
-        flex-basis: 100%;
-        margin: 10px;
-    }
 }
   
 .header {

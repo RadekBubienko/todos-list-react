@@ -21,7 +21,7 @@
     text-decoration-line: line-through;
 }
 
-.button__done {
+.list__button--done {
     color: #ffffff;
     background-color: #008000;
     margin: 5px;
@@ -33,11 +33,11 @@
     transition: 0.3s;
 }
 
-.button__done:hover {
+.list__button--done:hover {
     background-color: #008000a8;
 }
 
-.button__remove {
+.list__button--remove {
     color: #ffffff;
     background-color: #ff0000;
     margin: 5px;
@@ -49,6 +49,6 @@
     transition: 0.3s;
 }
 
-.button__remove:hover {
+.list__button--remove:hover {
     background-color: #ff0000a8;
 }

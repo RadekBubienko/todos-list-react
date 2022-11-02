@@ -18,3 +18,9 @@
 .buttons__button:disabled {
     color: #ccc;
 }
+@media (max-width: 767px) {
+    .buttons__button {
+        flex-basis: 100%;
+        margin: 10px;
+    }
+}

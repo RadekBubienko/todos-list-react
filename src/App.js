@@ -10,8 +10,6 @@ const tasks = [
   { id: 2, content: "namalować nowy obraz olejny", done: false },
 ];
 
-const hideDone = false;
-
 function App() {
   const [hideDone, setHideDone] = useState(false);
 

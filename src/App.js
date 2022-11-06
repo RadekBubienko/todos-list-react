@@ -10,8 +10,7 @@ import { useState } from "react";
 function App() {
   const [hideDone, setHideDone] = useState(false);
   const [tasks, setTasks] = useState([
-    { id: 1, content: "przejść na Reacta", done: true },
-    { id: 2, content: "namalować nowy obraz olejny", done: false },
+    {},
   ]);
 
   const toggleHideDone = () => {

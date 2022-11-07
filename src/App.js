@@ -5,8 +5,6 @@ import Section from "./Section";
 import Header from "./Header";
 import { useState } from "react";
 
-
-
 function App() {
   const [hideDone, setHideDone] = useState(false);
   const [tasks, setTasks] = useState([]);
@@ -20,13 +18,8 @@ function App() {
   };
 
   const toggleTaskDone = (id) => {
-    setTasks(tasks => tasks.map(task => {
-      if (task.id === id) {
-        return { ...task, done: !task.done };
-      }
-
-      return task;
-    }));
+    setTasks(tasks => tasks.map(task => task.id === id ? { 
+      ...task, done: !task.done } : task));
   };
 
   const setAllDone = () => {

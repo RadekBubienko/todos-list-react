@@ -50,12 +50,10 @@ function App() {
   return (
     <>
       <Header title="Lista zadań" />
-
       <Section
         title="Dodaj nowe zadanie"
         body={<Form addNewTask={addNewTask} />}
       />
-
       <Section
         title="Lista Zadań"
         body={
@@ -75,7 +73,6 @@ function App() {
           />
         }
       />
-
     </>
   )
 };

@@ -7,6 +7,7 @@ export const StyledButtons = styled.div`
     @media (max-width: 767px) {
         flex-basis: 100%;
         margin: 10px;
+        justify-content: center;
     }
 `;
 

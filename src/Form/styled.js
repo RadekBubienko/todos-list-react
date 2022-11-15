@@ -11,7 +11,7 @@ export const StyledForm = styled.form`
     }
 `;
 
-export const StyledInput = styled.input`
+export const Input = styled.input`
     border: 2px solid #ddd;
     padding: 10px;
 
@@ -20,7 +20,7 @@ export const StyledInput = styled.input`
     }
 `;
 
-export const StyledButton = styled.button`
+export const Button = styled.button`
     padding: 10px;
     color: #ffffff;
     background-color: #008080;

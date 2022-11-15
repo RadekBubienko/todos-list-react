@@ -8,7 +8,7 @@ export const StyledSection = styled.section`
     box-shadow: 0 0 5px #ddd;
 `;
 
-export const StyledHeader = styled.header`
+export const Header = styled.header`
     border-bottom: 1px solid #ddd;
     display: grid;
     grid-template-columns: auto auto;
@@ -22,7 +22,7 @@ export const StyledHeader = styled.header`
     }
 `;
 
-export const StyledSubHeader = styled.h2`
+export const SubHeader = styled.h2`
     font-size: 20px;
     color: #3c3c3c;
     margin: 0;

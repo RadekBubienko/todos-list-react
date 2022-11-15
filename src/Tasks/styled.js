@@ -25,42 +25,30 @@ export const Content = styled.span`
   `}
 `;
 
-export const ButtonDone = styled.button`
-    color: #ffffff;
-    background-color: #008000;
-    margin: 5px;
-    padding: 0px;
-    width: 30px;
-    height: 30px;
-    border: none;
-    cursor: pointer;
-    transition: 0.3s;
-
-    ${({ toggleDone }) => toggleDone && css`
-      background-color: #008000;
-      
-      &:hover {
-        background-color: #008000a8;
-      }
-    `}
+export const Button = styled.button`
+  color: #ffffff;
+  margin: 5px;
+  padding: 0px;
+  width: 30px;
+  height: 30px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
 `;
 
-export const ButtonRemove = styled.button`
-    color: #ffffff;
-    background-color: #ff0000;
-    margin: 5px;
-    padding: 0px;
-    width: 30px;
-    height: 30px;
-    border: none;
-    cursor: pointer;
-    transition: 0.3s;
+export const ButtonDone = styled(Button)`
+    
+  background-color: #008000;
+    
+  &:hover {
+    background-color: #008000a8;
+  }
+`;
 
-    ${({ remove }) => remove && css`
-      background-color: #ff0000;
+export const ButtonRemove = styled(Button)`
+  background-color: #ff0000;
 
-      &:hover {
-        background-color: #ff0000a8;
-      }
-    `}
+  &:hover {
+    background-color: #ff0000a8;
+  }
 `;

@@ -13,6 +13,8 @@ function App() {
     setHideDone(hideDone => !hideDone);
   };
 
+  
+
   const {
     tasks,
     removeTask,

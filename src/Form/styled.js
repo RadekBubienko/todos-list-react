@@ -6,34 +6,30 @@ export const StyledForm = styled.form`
     grid-template-columns: 1fr auto;
     grid-gap: 20px;
 
-    @media (max-width: 767px) {
+    @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
         grid-template-columns: 1fr;
     }
 `;
 
 export const Input = styled.input`
-    border: 2px solid #ddd;
+    border: 2px solid ${({ theme }) => theme.color.alto};
     padding: 10px;
-
-    &:focus-visible {
-        border: 2px solid #008080;
-    }
 `;
 
 export const Button = styled.button`
     padding: 10px;
-    color: #ffffff;
-    background-color: #008080;
+    color: ${({ theme }) => theme.color.white};
+    background-color: ${({ theme }) => theme.color.teal};
     border: none;
     cursor: pointer;
     transition: 0.3s;
 
-    &:active {
-        outline: auto;
+    &:hover {
+        filter: brightness(110%);
+        transform: scale(1.07); 
     }
 
-    &:hover {
-        background-color: #008080dd;
-        transform: scale(1.07); 
+    &:active {
+        filter: brightness(120%);
     }
 `;

@@ -14,13 +14,13 @@ html {
 }
 
 .body {
-  background-color: #eee;
+  background-color: ${({ theme }) => theme.color.gallery};
   margin: auto;
-  color: #292929;
+  color: ${({ theme }) => theme.color.darkGrey};
   max-width: 700px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
   .body {
       max-width: 94%;
   }

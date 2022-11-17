@@ -7,7 +7,7 @@ export const List = styled.ul`
 `;
 
 export const Item = styled.li`
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid ${({ theme }) => theme.color.alto};
   padding-bottom: 5px;
   display: grid;
   grid-template-columns: auto 1fr auto;
@@ -20,13 +20,15 @@ export const Item = styled.li`
 `;
 
 export const Content = styled.span`
+  color: ${({ theme }) => theme.color.darkGrey};
+  
   ${({ done }) => done && css`
     text-decoration-line: line-through;
   `}
 `;
 
 export const Button = styled.button`
-  color: #ffffff;
+  color: ${({ theme }) => theme.color.white};
   margin: 5px;
   padding: 0px;
   width: 30px;
@@ -38,17 +40,17 @@ export const Button = styled.button`
 
 export const ButtonDone = styled(Button)`
     
-  background-color: #008000;
+  background-color: ${({ theme }) => theme.color.forestGreen};
     
   &:hover {
-    background-color: #008000a8;
+    filter: brightness(120%);
   }
 `;
 
 export const ButtonRemove = styled(Button)`
-  background-color: #ff0000;
+  background-color: ${({ theme }) => theme.color.crimson};
 
   &:hover {
-    background-color: #ff0000a8;
+    filter: brightness(120%);
   }
 `;

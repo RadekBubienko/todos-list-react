@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
 export const Title = styled.h1`
-   color: #3c3c3c;
+    color: ${({ theme }) => theme.color.darkGrey};
     padding: 15px 0; 
 `;

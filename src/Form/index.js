@@ -3,6 +3,7 @@ import { StyledForm, Input, Button } from "./styled";
 
 const Form = ({ addNewTask }) => {
     const [newTaskContent, setNewTaskContent] = useState("");
+    const inputRef = useRef(null);
 
     const onFormSubmit = (event) => {
         event.preventDefault();
@@ -15,10 +16,9 @@ const Form = ({ addNewTask }) => {
         
         addNewTask(trimmedNewTaskContent);
         setNewTaskContent("");
+        inputRef.current.focus();
         
     };
-
-    const inputRef = useRef(null);
 
     return (
         <StyledForm onSubmit={onFormSubmit}>

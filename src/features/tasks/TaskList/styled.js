@@ -39,7 +39,6 @@ export const Button = styled.button`
 `;
 
 export const ButtonDone = styled(Button)`
-    
   background-color: ${({ theme }) => theme.color.forestGreen};
     
   &:hover {

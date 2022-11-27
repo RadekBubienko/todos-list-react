@@ -4,7 +4,7 @@ import Buttons from "../../features/tasks/Buttons";
 import Section from "../../common/Section";
 import Header from "../../common/Header";
 
-function Tasks() {
+const Tasks = () => {
   return (
     <>
       <Header title="Lista zadań" />

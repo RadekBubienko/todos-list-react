@@ -1,13 +1,27 @@
 # Task List
 
-![Screenshot](public/screenShot.png)
+![Screenshot](/screenShot.png)
 
 Description
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+To-do list. This page made while studying at the YouCode school. React was used
 
 ## Demo
 [https://radekbubienko.github.io/todos-list-react/](https://radekbubienko.github.io/todos-list-react/)
+
+## Technologies
+- HTML
+- CSS (flex, grid)
+- BEM
+- JS
+- React
+- Styled-Components
+- Redux
+- Redux-Axios
+- Redux-Saga
+- Redux-Router
+- Redux-Toolkit
+- Local Storage
 
 ## Available Scripts
 

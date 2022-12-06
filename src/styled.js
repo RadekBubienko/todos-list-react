@@ -25,4 +25,5 @@ html {
       max-width: 94%;
   }
 }
+
 `;

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styled, { css } from "styled-components";
 
 export const List = styled.ul`
@@ -13,10 +14,16 @@ export const Item = styled.li`
   grid-template-columns: auto 1fr auto;
   align-items: center;
   grid-gap: 10px;
+  color: ${({ theme }) => theme.color.teal};
 
   ${({ hidden }) => hidden && css`
     display: none;
   `}
+`;
+
+export const TaskLink = styled(Link)`
+  text-decoration: none;
+  color: ${({ theme }) => theme.color.teal};
 `;
 
 export const Content = styled.span`

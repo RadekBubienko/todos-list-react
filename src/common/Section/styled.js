@@ -24,6 +24,6 @@ export const Header = styled.header`
 
 export const SubHeader = styled.h2`
     font-size: 20px;
-    color: ${({ theme }) => theme.color.darkGrey};
+    color: ${({ theme }) => theme.color.teal};
     margin: 0;
 `;

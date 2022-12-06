@@ -1,8 +1,8 @@
 export const theme = {
     color: {
-        darkGrey: "#3c3c3c",
+        darkGrey: "#181818",
         white: "#fff",
-        silver: "#ccc",
+        silver: "#7a7a7a",
         alto: "#ddd",
         gallery: "#eee",
         teal: "#008080",

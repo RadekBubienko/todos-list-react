@@ -5,8 +5,6 @@ import searchQueryParamName from "../searchQueryParamName";
 import { toggleTaskDone, removeTask, selectHideDone, selectTasksByQuery } from "../tasksSlice";
 import { List, Item, TaskLink, Content, ButtonDone, ButtonRemove } from "./styled";
 
-
-
 const TaskList = () => {
   const query = useQueryParameter(searchQueryParamName);
   const tasks = useSelector(state => selectTasksByQuery(state, query));

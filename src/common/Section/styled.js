@@ -11,13 +11,13 @@ export const StyledSection = styled.section`
 export const Header = styled.header`
     border-bottom: 1px solid ${({ theme }) => theme.color.alto};
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr auto;
     grid-gap: 20px;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
 
-    @media (max-width: ${({ theme }) => theme.breakpoint.mobileMx}px) {
+    @media (max-width: ${({ theme }) => theme.breakpoint.mobileMid}px) {
         grid-template-columns: 1fr;
     }
 `;

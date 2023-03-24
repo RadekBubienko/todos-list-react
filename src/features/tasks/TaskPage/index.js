@@ -5,26 +5,27 @@ import { useSelector } from "react-redux";
 import { getTaskById } from "../tasksSlice";
 import { Paragraph } from "./styled";
 
-
 const TaskPage = () => {
-    const { id } = useParams();
-    const task = useSelector(state => getTaskById(state, id));
+  const { id } = useParams();
+  const task = useSelector((state) => getTaskById(state, id));
 
-    return (
-        <>
-            <Header title="Szczegóły zadania" />
-            <Section
-                title={task ? task.content : "Nie znaleziono zadania 😢"}
-                body={!!task && (
-                    <>
-                        <Paragraph>
-                            <strong>Ukończono:</strong> {task.done ? "Tak" : "Nie"}
-                        </Paragraph>
-                    </>
-                )}
-            />
-        </>
-    );
+  return (
+    <>
+      <Header title="Szczegóły zadania" />
+      <Section
+        title={task ? task.content : "Nie znaleziono zadania 😢"}
+        body={
+          !!task && (
+            <>
+              <Paragraph>
+                <strong>Ukończono:</strong> {task.done ? "Tak" : "Nie"}
+              </Paragraph>
+            </>
+          )
+        }
+      />
+    </>
+  );
 };
 
 export default TaskPage;
